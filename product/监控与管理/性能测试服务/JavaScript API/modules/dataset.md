@@ -16,7 +16,9 @@ Defined in typings/dataset.d.ts:17
 
 
 #### Type declaration
-| Name      | Type                                                         |
-| :-------- | :----------------------------------------------------------- |
-| `forEach` | (`fileName`: `string`, `callback`: (`item`: [`Item`](https://cloud.tencent.com/document/product/1484/75805), `i?`: `number`) => `void`) => `void` |
-| `get`     | (`key`: `string`) => `string`                                |
+| Name | Type |
+| :------ | :------ |
+| `add` | (`filename`: `string`, `values`: `Record`<`string`, `any`\>[]) => `void` |
+| `forEach` | (`fileName`: `string`, `callback`: (`item`: [`Item`](../interfaces/dataset.Item.md), `i?`: `number`) => `void`) => `void` |
+| `get` | (`key`: `string`) => `string` |
+| `random` | (`filename`: `string`) => `Record`<`string`, `any`\> |
